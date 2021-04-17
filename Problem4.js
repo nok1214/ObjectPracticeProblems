@@ -18,7 +18,31 @@ var car = {
     }
 };
 
+var person = {
+    firstName : 'John',
+    lastName : 'Smith',
+    age : 36,
+    eyeColor : 'blue',
+    occupation : 'teacher',
+    teachingSubject : 'Chemistry',
+    hobbies :['reading', 'writing', 'experiment'],
+    famousSaying : function() {
+        console.log ('try harder!');
+    }
+
+};
+
 //code starts here
 
-console.log(car.hasOwnProperty('wheelSize'));//output true;
+console.log(car.hasOwnProperty('wheelSize'));              //output true;
 
+//writing a fucntion that can check whether an object contains the specified key
+
+function checkItem(obj, item) {                            //create a function that accepts two parameter object(obj) and an item name;
+    return obj.hasOwnProperty(item)                        //using .hasOwnProperty() to search through the object that we input;
+};
+
+console.log(checkItem(car, "wheelSize"));                  //output true;
+console.log(checkItems(car, "color"));                     //output false;
+console.log(checkItems(person, "firstName"));              //output true;
+console.log(checkItems(person, "favoriteFood"));           //output false;

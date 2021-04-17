@@ -25,23 +25,23 @@ var books = [
 //code starts here
 
 function sortMyBooks (a, b) {
-    if (a.title < b.title)//comparing the first and second elements insdie our objects;
-    return -1;//if the condition met, will assign a 'place' to the element;
+    if (a.title < b.title)                  //comparing the first and second elements insdie our objects;
+    return -1;                              //if the condition met, will assign a 'place' to the element;
 
-    else if (a.title > b.title)//comparing a new set of elements insdie our objects;
-    return 1;//if the conditrion met, will assign another 'place' to the element;
+    else if (a.title > b.title)             //comparing a new set of elements insdie our objects;
+    return 1;                               //if the conditrion met, will assign another 'place' to the element;
 
-    else return 0;//if above comparsion already have a 'place', last item will take the last 'place';
+    else return 0;                          //if above comparsion already have a 'place', last item will take the last 'place';
 }
 
-console.log(books.sort(sortMyBooks));/*output
-                                        [ { author: 'Suzanne Collins',
-                                            title: 'Mockingjay: The final Book of The Hunger Games',
-                                            libraryID: 3245 },
-                                        { author: 'Bill Gates',
-                                            title: 'The Road Ahead',
-                                            libraryID: 1254 },
-                                        { author: 'Steve Jobs',
-                                            title: 'Walter Isaacson',
-                                            libraryID: 4264 } ]
-                                     */
+console.log(books.sort(sortMyBooks));       /*output
+                                                [ { author: 'Suzanne Collins',
+                                                    title: 'Mockingjay: The final Book of The Hunger Games',
+                                                    libraryID: 3245 },
+                                                { author: 'Bill Gates',
+                                                    title: 'The Road Ahead',
+                                                    libraryID: 1254 },
+                                                { author: 'Steve Jobs',
+                                                    title: 'Walter Isaacson',
+                                                    libraryID: 4264 } ]
+                                            */

@@ -34,10 +34,7 @@ var people = [
     }
 ]
 //using .map() to extract first name and last name value out from our object
-var findFirstName = people.map(function(a) {
-    return a. firstName
+var findFullName = people.map(function(a) {
+    return a.firstName + ' ' + a.lastName
 });
-var findLastName = people.map(function(b) {
-    return b.lastName
-});
-console.log(findFirstName, findLastName);//output [ 'John', 'Jane', 'Adam', 'Chris', 'Emily' ] [ 'Doe', 'White', 'Smith', 'Allen', 'Green' ];
+console.log(findFullName);//output ["John Doe", "Jane White", "Adam Smith", "Chris Allen", "Emily Green"];
